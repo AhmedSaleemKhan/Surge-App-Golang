@@ -1,0 +1,22 @@
+{
+  "name": "Surge",
+  "description": "P2P on steroids",
+  "author": {
+    "name": "WizardOfCodez",
+    "email": "wizardofcodez@proton.me"
+  },
+  "version": "1.1.1",
+  "binaryname": "surge",
+  "frontend": {
+    "dir": "frontend",
+    "install": "npm install",
+    "build": "npm run build",
+    "bridge": "src",
+    "serve": "npm run serve"
+  },
+  "WailsVersion": "",
+  "CrossCompile": false,
+  "Platform": "",
+  "Architecture": "",
+  "LdFlags": ""
+}

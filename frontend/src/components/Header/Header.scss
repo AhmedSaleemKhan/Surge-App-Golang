@@ -1,0 +1,46 @@
+.header {
+  height: 88px;
+  padding: 0 $padding-llg;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: $border;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+
+  &__notifications-marker {
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background: $danger;
+    position: absolute;
+    right: 138px;
+    top: 32px;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button {
+    margin: 0 $padding-llg;
+  }
+
+  &__search {
+    width: 269px;
+  }
+
+  &__right {
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-left: $padding-xl;
+  }
+}

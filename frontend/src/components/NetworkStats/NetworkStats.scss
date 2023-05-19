@@ -1,0 +1,36 @@
+.network-stats {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $dark-static;
+  box-shadow: $shadow-2;
+  backdrop-filter: $blur-2;
+  mix-blend-mode: luminosity;
+  font-size: $fz-sm;
+  font-weight: $fw-semi-bold;
+  color: $white;
+
+  &__left {
+    margin-left: $padding-llg;
+  }
+
+  &__right {
+    margin-right: $padding-xxl;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: $padding-xl;
+    }
+  }
+
+  &__address {
+    user-select: text;
+  }
+}

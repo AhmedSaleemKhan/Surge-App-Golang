@@ -1,0 +1,28 @@
+{
+  "name": "Surge",
+  "assetdir": "frontend/dist",
+  "frontend:build": "",
+  "frontend:install": "",
+  "frontend:dev": "",
+  "wailsjsdir": "./frontend",
+  "version": "2",
+  "Path": "",
+  "BuildDir": "",
+  "outputfilename": "surge.exe",
+  "OutputType": "",
+  "Platform": "",
+  "Author": {
+    "name": "WizardOfCodez",
+    "email": "wizardofcodez@proton.me"
+  },
+  "debounceMS": 100,
+  "devserverurl": "http://localhost:34115",
+  "appargs": "",
+  "Info": {
+    "companyName": "Rule110",
+    "productName": "Surge",
+    "productVersion": "1.1.1",
+    "copyright": "Copyright 2023",
+    "comments": "P2P on steroids (...and NKN)"
+  }
+}

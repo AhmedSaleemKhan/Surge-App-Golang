@@ -1,0 +1,128 @@
+.button {
+  border-radius: $br-md;
+  text-align: center;
+  transition: $transition-1;
+  cursor: pointer !important;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  appearance: none;
+  box-sizing: border-box;
+  font-weight: $fw-semi-bold;
+  font-size: $fz-sm;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  font-feature-settings: "salt" on;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: $padding-xs;
+  }
+
+  &:hover {
+    svg {
+      path {
+        stroke: $white;
+      }
+    }
+  }
+
+  &:disabled {
+    color: rgba($white, 0.2) !important;
+    cursor: not-allowed !important;
+    background: initial !important;
+    border: 1px solid transparent !important;
+  }
+
+  &_size {
+    &_lg {
+      padding: $padding-md $padding-xl;
+    }
+
+    &_md {
+      padding: $padding-sm $padding-llg;
+      height: 40px;
+    }
+  }
+
+  &_theme {
+    &_primary {
+      background: $primary-gradient;
+      color: $white;
+    }
+
+    &_text {
+      background: transparent;
+      color: $white;
+      padding: 0;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    &_default {
+      background: #2a2a2c;
+      box-shadow: $shadow-2;
+      backdrop-filter: $blur-2;
+      color: $white;
+      border: 1px solid transparent;
+
+      &_icon {
+        color: $grey;
+      }
+
+      &:hover {
+        background: $primary;
+        border: $border-primary;
+      }
+    }
+
+    &_icon {
+      background: #212123;
+      box-shadow: $shadow-2;
+      backdrop-filter: $blur-2;
+      color: $grey;
+      border: 1px solid transparent;
+
+      &_active {
+        background: $primary;
+        border: $border-primary;
+        color: $white;
+
+        svg {
+          path {
+            stroke: $white;
+          }
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background: $primary;
+        border: $border-primary;
+      }
+    }
+
+    &_transparent {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: $white;
+
+      svg {
+        path {
+          stroke: $white;
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background: $primary;
+        border: $border-primary;
+      }
+    }
+  }
+}

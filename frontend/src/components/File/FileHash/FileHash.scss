@@ -1,0 +1,46 @@
+.file-hash {
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &_active {
+    .file-hash__icon {
+      path,
+      circle {
+        stroke: $primary !important;
+      }
+    }
+  }
+
+  &:hover & {
+    &__icon {
+      path,
+      circle {
+        stroke: $white;
+      }
+    }
+  }
+
+  &__icon {
+    margin-right: $padding-xs;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    transition: $transition-1;
+  }
+
+  &__text {
+    flex: 1;
+  }
+}
+
+@keyframes floatup {
+  20% {
+    opacity: 0.999;
+  }
+  100% {
+    transform: translate3d(-50%, -17px, 0);
+  }
+}
